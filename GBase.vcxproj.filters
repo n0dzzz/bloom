@@ -1,0 +1,245 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Dependencies">
+      <UniqueIdentifier>{02454aa1-a5dd-4442-8e27-e026bbd5c552}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SDK">
+      <UniqueIdentifier>{d56cd512-5e01-4c82-86df-39d04f3ad517}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Features">
+      <UniqueIdentifier>{e507359c-5d0c-4168-9628-f37173c3a75b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utilities">
+      <UniqueIdentifier>{f095e17f-c05c-4d6c-9028-dfb5181681ad}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Dependencies\Minhook">
+      <UniqueIdentifier>{354338c1-ade2-4af9-80e1-64983160d199}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Dependencies\Minhook\hde">
+      <UniqueIdentifier>{1cc02414-3b85-48b2-ba9d-cce184fc8d4d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SDK\Interfaces">
+      <UniqueIdentifier>{66968e30-0d0a-4f86-8b5b-046ef1c95399}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SDK\Math">
+      <UniqueIdentifier>{2f323c56-e671-498c-b7f9-dda8deac3153}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Utilities\Utils.cpp">
+      <Filter>Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="Hooks.cpp" />
+    <ClCompile Include="Dependencies\Minhook\hde\hde32.c">
+      <Filter>Dependencies\Minhook\hde</Filter>
+    </ClCompile>
+    <ClCompile Include="Dependencies\Minhook\hde\hde64.c">
+      <Filter>Dependencies\Minhook\hde</Filter>
+    </ClCompile>
+    <ClCompile Include="Dependencies\Minhook\buffer.c">
+      <Filter>Dependencies\Minhook</Filter>
+    </ClCompile>
+    <ClCompile Include="Dependencies\Minhook\hook.c">
+      <Filter>Dependencies\Minhook</Filter>
+    </ClCompile>
+    <ClCompile Include="Dependencies\Minhook\trampoline.c">
+      <Filter>Dependencies\Minhook</Filter>
+    </ClCompile>
+    <ClCompile Include="SDK\Math\VMatrix.cpp">
+      <Filter>SDK\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="SDK\Math\Vector4D.cpp">
+      <Filter>SDK\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="SDK\SDK.cpp">
+      <Filter>SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="Utilities\Input.cpp">
+      <Filter>Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="SDK\Misc\Checksum\ChecksumCrc.cpp" />
+    <ClCompile Include="SDK\Misc\Checksum\ChecksumMD5.cpp" />
+    <ClCompile Include="SDK\Misc\Color.cpp" />
+    <ClCompile Include="Game.cpp" />
+    <ClCompile Include="Utilities\Netvars.cpp" />
+    <ClCompile Include="Utilities\Math\Math.cpp" />
+    <ClCompile Include="Features\Misc.cpp" />
+    <ClCompile Include="Utilities\Render\Render.cpp">
+      <Filter>Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="Features\Visuals.cpp" />
+    <ClCompile Include="Utilities\Render\BloomUI\BloomUI.cpp" />
+    <ClCompile Include="Dependencies\ImGui\imgui.cpp" />
+    <ClCompile Include="Dependencies\ImGui\imgui_demo.cpp" />
+    <ClCompile Include="Dependencies\ImGui\imgui_draw.cpp" />
+    <ClCompile Include="Dependencies\ImGui\imgui_impl_dx9.cpp" />
+    <ClCompile Include="Dependencies\ImGui\imgui_impl_dx11.cpp" />
+    <ClCompile Include="Dependencies\ImGui\imgui_impl_win32.cpp" />
+    <ClCompile Include="Dependencies\ImGui\imgui_tables.cpp" />
+    <ClCompile Include="Dependencies\ImGui\imgui_widgets.cpp" />
+    <ClCompile Include="Dependencies\FGUI\widgets\button.cpp" />
+    <ClCompile Include="Dependencies\FGUI\widgets\checkbox.cpp" />
+    <ClCompile Include="Dependencies\FGUI\widgets\colorpicker.cpp" />
+    <ClCompile Include="Dependencies\FGUI\widgets\combobox.cpp" />
+    <ClCompile Include="Dependencies\FGUI\widgets\container.cpp" />
+    <ClCompile Include="Dependencies\FGUI\widgets\itemselector.cpp" />
+    <ClCompile Include="Dependencies\FGUI\widgets\keybinder.cpp" />
+    <ClCompile Include="Dependencies\FGUI\widgets\label.cpp" />
+    <ClCompile Include="Dependencies\FGUI\widgets\listbox.cpp" />
+    <ClCompile Include="Dependencies\FGUI\widgets\multibox.cpp" />
+    <ClCompile Include="Dependencies\FGUI\widgets\slider.cpp" />
+    <ClCompile Include="Dependencies\FGUI\widgets\tabpanel.cpp" />
+    <ClCompile Include="Dependencies\FGUI\widgets\textbox.cpp" />
+    <ClCompile Include="Dependencies\FGUI\widgets\widgets.cpp" />
+    <ClCompile Include="Utilities\Config\Config.cpp" />
+    <ClCompile Include="Features\Aim.cpp" />
+    <ClCompile Include="Menu.cpp" />
+    <ClCompile Include="Features\Autowall.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Utilities\ColorPrint.h">
+      <Filter>Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="Utilities\Globals.h">
+      <Filter>Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="Utilities\Options.h">
+      <Filter>Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="Hooks.h" />
+    <ClInclude Include="Dependencies\Minhook\hde\hde32.h">
+      <Filter>Dependencies\Minhook\hde</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependencies\Minhook\hde\hde64.h">
+      <Filter>Dependencies\Minhook\hde</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependencies\Minhook\hde\pstdint.h">
+      <Filter>Dependencies\Minhook\hde</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependencies\Minhook\hde\table32.h">
+      <Filter>Dependencies\Minhook\hde</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependencies\Minhook\hde\table64.h">
+      <Filter>Dependencies\Minhook\hde</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependencies\Minhook\buffer.h">
+      <Filter>Dependencies\Minhook</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependencies\Minhook\MinHook.h">
+      <Filter>Dependencies\Minhook</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependencies\Minhook\trampoline.h">
+      <Filter>Dependencies\Minhook</Filter>
+    </ClInclude>
+    <ClInclude Include="SDK\Interfaces\IRenderView.h">
+      <Filter>SDK\Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="SDK\Math\QAngle.h">
+      <Filter>SDK\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="SDK\Math\VMatrix.h">
+      <Filter>SDK\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="SDK\Math\Vector.h">
+      <Filter>SDK\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="SDK\Math\Vector4D.h">
+      <Filter>SDK\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="SDK\Math\Vector2D.h">
+      <Filter>SDK\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="SDK\SDK.h">
+      <Filter>SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Utilities\Input.h">
+      <Filter>Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="SDK\Interfaces\ISurface.h" />
+    <ClInclude Include="SDK\Interfaces\IAppSystem.h" />
+    <ClInclude Include="SDK\Interfaces\IPanel.h" />
+    <ClInclude Include="SDK\Interfaces\CUserCmd.h" />
+    <ClInclude Include="SDK\Interfaces\IClientMode.h" />
+    <ClInclude Include="SDK\Interfaces\IBaseClientDll.h" />
+    <ClInclude Include="SDK\Interfaces\GlobalVars.h" />
+    <ClInclude Include="SDK\Interfaces\ClientClass.h" />
+    <ClInclude Include="SDK\Misc\Enums.h" />
+    <ClInclude Include="SDK\Misc\FNV.h" />
+    <ClInclude Include="SDK\Misc\Checksum\ChecksumCrc.h" />
+    <ClInclude Include="SDK\Misc\Checksum\ChecksumMD5.h" />
+    <ClInclude Include="SDK\Misc\Color.h" />
+    <ClInclude Include="SDK\Misc\RecV.h" />
+    <ClInclude Include="Game.h" />
+    <ClInclude Include="SDK\Classes\Entities.h" />
+    <ClInclude Include="Utilities\Netvars.h" />
+    <ClInclude Include="Utilities\Utils.h">
+      <Filter>Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="SDK\Classes\Collideable.h" />
+    <ClInclude Include="SDK\Structs\Models.h" />
+    <ClInclude Include="Utilities\Math\Math.h" />
+    <ClInclude Include="SDK\Interfaces\IVEngineClient.h" />
+    <ClInclude Include="SDK\Structs\Animstate.h" />
+    <ClInclude Include="SDK\Interfaces\IEngineTrace.h" />
+    <ClInclude Include="SDK\Interfaces\IWeaponSystem.h" />
+    <ClInclude Include="SDK\Structs\WeaponInfo.h" />
+    <ClInclude Include="SDK\Interfaces\IClientEntityList.h" />
+    <ClInclude Include="SDK\Misc\CBaseHandle.h" />
+    <ClInclude Include="SDK\Misc\IHandleEntity.h" />
+    <ClInclude Include="SDK\Interfaces\IVModelInfo.h" />
+    <ClInclude Include="SDK\Misc\Studio.h" />
+    <ClInclude Include="Features\Misc.h" />
+    <ClInclude Include="Utilities\Render\Render.h">
+      <Filter>Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="Features\Visuals.h" />
+    <ClInclude Include="Utilities\Render\BloomUI\BloomUI.h" />
+    <ClInclude Include="Dependencies\ImGui\imconfig.h" />
+    <ClInclude Include="Dependencies\ImGui\imgui.h" />
+    <ClInclude Include="Dependencies\ImGui\imgui_impl_dx9.h" />
+    <ClInclude Include="Dependencies\ImGui\imgui_impl_dx11.h" />
+    <ClInclude Include="Dependencies\ImGui\imgui_impl_win32.h" />
+    <ClInclude Include="Dependencies\ImGui\imgui_internal.h" />
+    <ClInclude Include="Dependencies\ImGui\imstb_rectpack.h" />
+    <ClInclude Include="Dependencies\ImGui\imstb_textedit.h" />
+    <ClInclude Include="Dependencies\ImGui\imstb_truetype.h" />
+    <ClInclude Include="Dependencies\FGUI\FGUI.hpp" />
+    <ClInclude Include="Dependencies\FGUI\dependencies\external\json.hpp" />
+    <ClInclude Include="Dependencies\FGUI\internal\aliases.hpp" />
+    <ClInclude Include="Dependencies\FGUI\internal\definitions.hpp" />
+    <ClInclude Include="Dependencies\FGUI\internal\helpers.hpp" />
+    <ClInclude Include="Dependencies\FGUI\misc\builder.hpp" />
+    <ClInclude Include="Dependencies\FGUI\widgets\button.hpp" />
+    <ClInclude Include="Dependencies\FGUI\widgets\checkbox.hpp" />
+    <ClInclude Include="Dependencies\FGUI\widgets\colorpicker.hpp" />
+    <ClInclude Include="Dependencies\FGUI\widgets\combobox.hpp" />
+    <ClInclude Include="Dependencies\FGUI\widgets\container.hpp" />
+    <ClInclude Include="Dependencies\FGUI\widgets\itemselector.hpp" />
+    <ClInclude Include="Dependencies\FGUI\widgets\keybinder.hpp" />
+    <ClInclude Include="Dependencies\FGUI\widgets\label.hpp" />
+    <ClInclude Include="Dependencies\FGUI\widgets\listbox.hpp" />
+    <ClInclude Include="Dependencies\FGUI\widgets\multibox.hpp" />
+    <ClInclude Include="Dependencies\FGUI\widgets\slider.hpp" />
+    <ClInclude Include="Dependencies\FGUI\widgets\tabpanel.hpp" />
+    <ClInclude Include="Dependencies\FGUI\widgets\textbox.hpp" />
+    <ClInclude Include="Dependencies\FGUI\widgets\widgets.hpp" />
+    <ClInclude Include="Features\Variables.h" />
+    <ClInclude Include="Features\Aim.h" />
+    <ClInclude Include="SDK\Classes\Studio.h" />
+    <ClInclude Include="SDK\Structs\Materials.h" />
+    <ClInclude Include="SDK\Interfaces\IVModelRender.h" />
+    <ClInclude Include="SDK\Interfaces\IMaterialSystem.h" />
+    <ClInclude Include="SDK\Interfaces\IStudioRender.h" />
+    <ClInclude Include="Utilities\Config\Config.h" />
+    <ClInclude Include="SDK\Interfaces\IInput.h" />
+    <ClInclude Include="Menu.h" />
+    <ClInclude Include="Features\Autowall.h" />
+    <ClInclude Include="SDK\Math\CUtlVector.h" />
+    <ClInclude Include="SDK\Math\CUtlMemory.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Dependencies\FGUI\LICENSE" />
+  </ItemGroup>
+</Project>

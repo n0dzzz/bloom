@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Main|Win32">
+      <Configuration>Main</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Main|x64">
+      <Configuration>Main</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{8b6a378b-1599-4afe-84bd-4c85a03adeb6}</ProjectGuid>
+    <RootNamespace>GBase</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Main|Win32'">
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Main|x64'">
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(SolutionDir)bin\$(Configuration)-$(Platform)\$(ProjectName)\</OutDir>
+    <IntDir>$(SolutionDir)bin-int\$(Configuration)-$(Platform)\$(ProjectName)\</IntDir>
+    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);$(DXSDK_DIR)Include</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(SolutionDir)bin\$(Configuration)-$(Platform)\$(ProjectName)\</OutDir>
+    <IntDir>$(SolutionDir)bin-int\$(Configuration)-$(Platform)\$(ProjectName)\</IntDir>
+    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);$(DXSDK_DIR)Include</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(SolutionDir)bin\$(Configuration)-$(Platform)\$(ProjectName)\</OutDir>
+    <IntDir>$(SolutionDir)bin-int\$(Configuration)-$(Platform)\$(ProjectName)\</IntDir>
+    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);$(DXSDK_DIR)Include</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(SolutionDir)bin\$(Configuration)-$(Platform)\$(ProjectName)\</OutDir>
+    <IntDir>$(SolutionDir)bin-int\$(Configuration)-$(Platform)\$(ProjectName)\</IntDir>
+    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);$(DXSDK_DIR)Include</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Main|Win32'">
+    <TargetExt>.dll</TargetExt>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Main|x64'">
+    <TargetExt>.dll</TargetExt>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="Dependencies\FGUI\widgets\button.cpp" />
+    <ClCompile Include="Dependencies\FGUI\widgets\checkbox.cpp" />
+    <ClCompile Include="Dependencies\FGUI\widgets\colorpicker.cpp" />
+    <ClCompile Include="Dependencies\FGUI\widgets\combobox.cpp" />
+    <ClCompile Include="Dependencies\FGUI\widgets\container.cpp" />
+    <ClCompile Include="Dependencies\FGUI\widgets\itemselector.cpp" />
+    <ClCompile Include="Dependencies\FGUI\widgets\keybinder.cpp" />
+    <ClCompile Include="Dependencies\FGUI\widgets\label.cpp" />
+    <ClCompile Include="Dependencies\FGUI\widgets\listbox.cpp" />
+    <ClCompile Include="Dependencies\FGUI\widgets\multibox.cpp" />
+    <ClCompile Include="Dependencies\FGUI\widgets\slider.cpp" />
+    <ClCompile Include="Dependencies\FGUI\widgets\tabpanel.cpp" />
+    <ClCompile Include="Dependencies\FGUI\widgets\textbox.cpp" />
+    <ClCompile Include="Dependencies\FGUI\widgets\widgets.cpp" />
+    <ClCompile Include="Dependencies\ImGui\imgui.cpp" />
+    <ClCompile Include="Dependencies\ImGui\imgui_demo.cpp" />
+    <ClCompile Include="Dependencies\ImGui\imgui_draw.cpp" />
+    <ClCompile Include="Dependencies\ImGui\imgui_impl_dx11.cpp" />
+    <ClCompile Include="Dependencies\ImGui\imgui_impl_dx9.cpp" />
+    <ClCompile Include="Dependencies\ImGui\imgui_impl_win32.cpp" />
+    <ClCompile Include="Dependencies\ImGui\imgui_tables.cpp" />
+    <ClCompile Include="Dependencies\ImGui\imgui_widgets.cpp" />
+    <ClCompile Include="Dependencies\Minhook\buffer.c" />
+    <ClCompile Include="Dependencies\Minhook\hde\hde32.c" />
+    <ClCompile Include="Dependencies\Minhook\hde\hde64.c" />
+    <ClCompile Include="Dependencies\Minhook\hook.c" />
+    <ClCompile Include="Dependencies\Minhook\trampoline.c" />
+    <ClCompile Include="Features\Aim.cpp" />
+    <ClCompile Include="Features\Autowall.cpp" />
+    <ClCompile Include="Features\Misc.cpp" />
+    <ClCompile Include="Features\Visuals.cpp" />
+    <ClCompile Include="Game.cpp" />
+    <ClCompile Include="Hooks.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="Menu.cpp" />
+    <ClCompile Include="SDK\Math\Vector4D.cpp" />
+    <ClCompile Include="SDK\Math\VMatrix.cpp" />
+    <ClCompile Include="SDK\SDK.cpp" />
+    <ClCompile Include="SDK\Misc\Checksum\ChecksumCrc.cpp" />
+    <ClCompile Include="SDK\Misc\Checksum\ChecksumMD5.cpp" />
+    <ClCompile Include="SDK\Misc\Color.cpp" />
+    <ClCompile Include="Utilities\Config\Config.cpp" />
+    <ClCompile Include="Utilities\Input.cpp" />
+    <ClCompile Include="Utilities\Math\Math.cpp" />
+    <ClCompile Include="Utilities\Netvars.cpp" />
+    <ClCompile Include="Utilities\Render\BloomUI\BloomUI.cpp" />
+    <ClCompile Include="Utilities\Render\Render.cpp" />
+    <ClCompile Include="Utilities\Utils.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Dependencies\FGUI\dependencies\external\json.hpp" />
+    <ClInclude Include="Dependencies\FGUI\FGUI.hpp" />
+    <ClInclude Include="Dependencies\FGUI\internal\aliases.hpp" />
+    <ClInclude Include="Dependencies\FGUI\internal\definitions.hpp" />
+    <ClInclude Include="Dependencies\FGUI\internal\helpers.hpp" />
+    <ClInclude Include="Dependencies\FGUI\misc\builder.hpp" />
+    <ClInclude Include="Dependencies\FGUI\widgets\button.hpp" />
+    <ClInclude Include="Dependencies\FGUI\widgets\checkbox.hpp" />
+    <ClInclude Include="Dependencies\FGUI\widgets\colorpicker.hpp" />
+    <ClInclude Include="Dependencies\FGUI\widgets\combobox.hpp" />
+    <ClInclude Include="Dependencies\FGUI\widgets\container.hpp" />
+    <ClInclude Include="Dependencies\FGUI\widgets\itemselector.hpp" />
+    <ClInclude Include="Dependencies\FGUI\widgets\keybinder.hpp" />
+    <ClInclude Include="Dependencies\FGUI\widgets\label.hpp" />
+    <ClInclude Include="Dependencies\FGUI\widgets\listbox.hpp" />
+    <ClInclude Include="Dependencies\FGUI\widgets\multibox.hpp" />
+    <ClInclude Include="Dependencies\FGUI\widgets\slider.hpp" />
+    <ClInclude Include="Dependencies\FGUI\widgets\tabpanel.hpp" />
+    <ClInclude Include="Dependencies\FGUI\widgets\textbox.hpp" />
+    <ClInclude Include="Dependencies\FGUI\widgets\widgets.hpp" />
+    <ClInclude Include="Dependencies\ImGui\imconfig.h" />
+    <ClInclude Include="Dependencies\ImGui\imgui.h" />
+    <ClInclude Include="Dependencies\ImGui\imgui_impl_dx11.h" />
+    <ClInclude Include="Dependencies\ImGui\imgui_impl_dx9.h" />
+    <ClInclude Include="Dependencies\ImGui\imgui_impl_win32.h" />
+    <ClInclude Include="Dependencies\ImGui\imgui_internal.h" />
+    <ClInclude Include="Dependencies\ImGui\imstb_rectpack.h" />
+    <ClInclude Include="Dependencies\ImGui\imstb_textedit.h" />
+    <ClInclude Include="Dependencies\ImGui\imstb_truetype.h" />
+    <ClInclude Include="Dependencies\Minhook\buffer.h" />
+    <ClInclude Include="Dependencies\Minhook\hde\hde32.h" />
+    <ClInclude Include="Dependencies\Minhook\hde\hde64.h" />
+    <ClInclude Include="Dependencies\Minhook\hde\pstdint.h" />
+    <ClInclude Include="Dependencies\Minhook\hde\table32.h" />
+    <ClInclude Include="Dependencies\Minhook\hde\table64.h" />
+    <ClInclude Include="Dependencies\Minhook\MinHook.h" />
+    <ClInclude Include="Dependencies\Minhook\trampoline.h" />
+    <ClInclude Include="Features\Aim.h" />
+    <ClInclude Include="Features\Autowall.h" />
+    <ClInclude Include="Features\Misc.h" />
+    <ClInclude Include="Features\Variables.h" />
+    <ClInclude Include="Features\Visuals.h" />
+    <ClInclude Include="Game.h" />
+    <ClInclude Include="Hooks.h" />
+    <ClInclude Include="Menu.h" />
+    <ClInclude Include="SDK\Classes\Collideable.h" />
+    <ClInclude Include="SDK\Classes\Entities.h" />
+    <ClInclude Include="SDK\Interfaces\IInput.h" />
+    <ClInclude Include="SDK\Interfaces\IMaterialSystem.h" />
+    <ClInclude Include="SDK\Interfaces\IStudioRender.h" />
+    <ClInclude Include="SDK\Interfaces\IVModelRender.h" />
+    <ClInclude Include="SDK\Classes\Studio.h" />
+    <ClInclude Include="SDK\Interfaces\ClientClass.h" />
+    <ClInclude Include="SDK\Interfaces\CUserCmd.h" />
+    <ClInclude Include="SDK\Interfaces\GlobalVars.h" />
+    <ClInclude Include="SDK\Interfaces\IAppSystem.h" />
+    <ClInclude Include="SDK\Interfaces\IBaseClientDll.h" />
+    <ClInclude Include="SDK\Interfaces\IClientEntityList.h" />
+    <ClInclude Include="SDK\Interfaces\IClientMode.h" />
+    <ClInclude Include="SDK\Interfaces\IEngineTrace.h" />
+    <ClInclude Include="SDK\Interfaces\IPanel.h" />
+    <ClInclude Include="SDK\Interfaces\IRenderView.h" />
+    <ClInclude Include="SDK\Interfaces\ISurface.h" />
+    <ClInclude Include="SDK\Interfaces\IVEngineClient.h" />
+    <ClInclude Include="SDK\Interfaces\IVModelInfo.h" />
+    <ClInclude Include="SDK\Interfaces\IWeaponSystem.h" />
+    <ClInclude Include="SDK\Math\CUtlMemory.h" />
+    <ClInclude Include="SDK\Math\CUtlVector.h" />
+    <ClInclude Include="SDK\Math\QAngle.h" />
+    <ClInclude Include="SDK\Math\Vector.h" />
+    <ClInclude Include="SDK\Math\Vector2D.h" />
+    <ClInclude Include="SDK\Math\Vector4D.h" />
+    <ClInclude Include="SDK\Math\VMatrix.h" />
+    <ClInclude Include="SDK\Misc\CBaseHandle.h" />
+    <ClInclude Include="SDK\Misc\Enums.h" />
+    <ClInclude Include="SDK\Misc\FNV.h" />
+    <ClInclude Include="SDK\Misc\IHandleEntity.h" />
+    <ClInclude Include="SDK\Misc\Studio.h" />
+    <ClInclude Include="SDK\SDK.h" />
+    <ClInclude Include="SDK\Misc\Checksum\ChecksumCrc.h" />
+    <ClInclude Include="SDK\Misc\Checksum\ChecksumMD5.h" />
+    <ClInclude Include="SDK\Misc\Color.h" />
+    <ClInclude Include="SDK\Structs\Animstate.h" />
+    <ClInclude Include="SDK\Structs\Materials.h" />
+    <ClInclude Include="SDK\Structs\Models.h" />
+    <ClInclude Include="SDK\Structs\WeaponInfo.h" />
+    <ClInclude Include="Utilities\ColorPrint.h" />
+    <ClInclude Include="Utilities\Config\Config.h" />
+    <ClInclude Include="Utilities\Globals.h" />
+    <ClInclude Include="Utilities\Input.h" />
+    <ClInclude Include="Utilities\Math\Math.h" />
+    <ClInclude Include="Utilities\Netvars.h" />
+    <ClInclude Include="Utilities\Options.h" />
+    <ClInclude Include="SDK\Misc\RecV.h" />
+    <ClInclude Include="Utilities\Render\BloomUI\BloomUI.h" />
+    <ClInclude Include="Utilities\Render\Render.h" />
+    <ClInclude Include="Utilities\Utils.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Dependencies\FGUI\LICENSE" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
